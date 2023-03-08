@@ -1,43 +1,154 @@
-/* Reset Styles */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 /* Global Styles */
 body {
-	font-family: Arial, sans-serif;
-	line-height: 1.5;
-	color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 nav li {
-	margin: 0 10px;
+    margin: 0 20px;
 }
 
 nav a {
-	color: #fff;
-	text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-section {
-	padding: 50px 20px;
+nav a:hover {
+    background-color: #333;
+    color: #fff;
 }
 
-h1, h2, h3 {
-	margin-bottom:
+/* Banner Styles */
+#banner {
+    background-color: #eee;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#banner h1 {
+    margin-top: 0;
+}
+
+/* About Styles */
+#about {
+    background-color: #f9f9f9;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+/* Portfolio Styles */
+#portfolio {
+    background-color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#portfolio ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#portfolio li {
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#portfolio li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#portfolio a {
+    display: block;
+    padding: 20px;
+}
+
+#portfolio h3 {
+    margin-top: 0;
+}
+
+/* Contact Styles */
+#contact {
+    background-color: #eee;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
