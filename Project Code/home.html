@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MyWebPage - Personal Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="banner">
+		<h1>Welcome to MyWebPage</h1>
+		<p>A personal portfolio website designed to showcase my projects and introduce myself to the world.</p>
+	</section>
+	<section id="about">
+		<h2>About Me</h2>
+		<img src="profile.jpg" alt="Profile Picture">
+		<p>Hi, I'm [Your Name], a [Your Profession/Title]. I have [Your Years of Experience] years of experience in [Your Area of Expertise/Industry].</p>
+		<p>[Your Short Bio/Description].</p>
+	</section>
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		<ul>
+			<li>
+				<a href="project1.html">
+					<img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail">
+					<h3>Project 1</h3>
+					<p>[Project 1 Description]</p>
+				</a>
+			</li>
+			<li>
+				<a href="project2.html">
+					<img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+					<h3>Project 2</h3>
+					<p>[Project 2 Description]</p>
+				</a>
+			</li>
+			<!-- Add more projects as needed -->
+		</ul>
+	</section>
+	<section id="contact">
+		<h2>Contact Me</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+	</section>
+	<footer>
+		<p>&copy; 2023 MyWebPage. All rights reserved.</p>
+	</footer>
+</body>
+</html>
